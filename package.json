@@ -1,0 +1,40 @@
+{
+  "name": "mnr-req-logger",
+  "version": "1.0.0",
+  "description": "Opinionated wrapper around morgan logger middleware for node.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/semistandard --verbose | ./node_modules/.bin/snazzy"
+  },
+  "author": {
+    "name": "Alexey Gorokhov",
+    "email": "alexey.gorokhov@icloud.com",
+    "url": ""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "mnr-transaction-id": "^1.0.0",
+    "semistandard": "^12.0.0",
+    "snazzy": "^8.0.0"
+  },
+  "keywords": [
+    "logger",
+    "express",
+    "morgan"
+  ],
+  "homepage": "https://github.com/AlexeyGorokhov/mnr-req-logger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexeyGorokhov/mnr-req-logger"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexeyGorokhov/mnr-req-logger/issues"
+  }
+}
