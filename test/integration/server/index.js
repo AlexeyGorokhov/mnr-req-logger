@@ -12,7 +12,7 @@ app.use(mnrTransactionId);
 
 app.use(mnrReqLogger({
   appName: 'my-cool-app',
-  deploymentEnv: 'production'
+  deploymentEnv: 'production',
 }));
 
 app.get('/foo', (req, res) => {
