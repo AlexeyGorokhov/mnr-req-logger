@@ -1,14 +1,9 @@
-'use strict';
+import http from 'node:http';
+import express from 'express';
 
-const http = require('http');
-const express = require('express');
-const mnrTransactionId = require('mnr-transaction-id');
-
-const mnrReqLogger = require('../../../index');
+import mnrReqLogger from '../../../src/index.js';
 
 const app = express();
-
-app.use(mnrTransactionId);
 
 app.use(mnrReqLogger({
   appName: 'my-cool-app',
