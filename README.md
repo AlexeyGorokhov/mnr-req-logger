@@ -6,6 +6,15 @@ Opinionated wrapper around [morgan](https://www.npmjs.com/package/morgan) logger
 
 This is a custom highly opinionated solution aimed at code reuse for a few private projects. You'd be better off using [morgan](https://www.npmjs.com/package/morgan) directly.
 
+## v2 Breaking Changes
+
+* From v2, `mnr-req-logger` is an ESM-only module - you are not able to import it with `require()`.
+
+* Bump minimum supported version of Node.js to v20.
+
+Archive documentation:
+* [v1](https://github.com/AlexeyGorokhov/mnr-req-logger/blob/master/docs-archives/v1.md);
+
 
 ## Installation
 
@@ -15,8 +24,8 @@ $ npm install --save mnr-req-logger
 
 ## Usage example
 
-```javascript
-const mnrReqLogger = require('mnr-req-logger');
+```typescript
+import mnrReqLogger from 'mnr-req-logger';
 
 app.use(mnrReqLogger({
   appName: 'my-cool-app',
